@@ -1,0 +1,5 @@
+main
+.DS_Store
+/.vscode/
+/.idea
+go.sum

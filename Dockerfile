@@ -12,7 +12,7 @@ RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
  apk update && \
  apk add fuse
 COPY weed /usr/bin/weed
-#ENTRYPOINT ["/usr/main"]
+#ENTRYPOINT ["/bin/sh", "-c", "sleep 12s; /usr/main"]
 EXPOSE 5000
 ENTRYPOINT ["sleep"]
 CMD ["infinity"]
